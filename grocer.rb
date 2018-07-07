@@ -53,7 +53,6 @@ def checkout(cart, coupons)
   consolidated_cart = consolidate_cart(cart)
   couponed_cart = apply_coupons(consolidated_cart, coupons)
   discounted_cart = apply_clearance(couponed_cart)
-  # binding.pry
   total = discounted_cart.map { |item| item.last[:price] * item.last[:count]}.reduce(:+)
   total > 100 ? total * 0.9 : total
 end
