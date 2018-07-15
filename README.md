@@ -1,11 +1,12 @@
 ## Objectives
+
 Create a checkout method to calculate the total cost of a cart of items and apply discounts and coupons as necessary.
 
 Dr. Steve Bruhle, your green grocer, isn't ready, but you are!
 
 ## Instructions
 
-Implement a method `checkout` to calculate total cost of a cart of items and apply discounts and coupons as necessary. The checkout method will rely on the `consolidate_cart`, `apply_coupons`, and the `apply_clearance` methods.
+Implement a method `checkout` to calculate total cost of a cart of items and apply discounts 8778777and coupons as necessary. The checkout method will rely on the `consolidate_cart`, `apply_coupons`, and the `apply_clearance` methods.
 
 #### The `consolidate_cart` method
 
@@ -20,6 +21,7 @@ For instance, if the method is given the array below:
   {"KALE"    => {:price => 3.0, :clearance => false}}
 ]
 ```
+
 then the method should return the hash below:
 
 ```ruby
@@ -39,11 +41,11 @@ If the method is given a cart that looks like this:
   "KALE"    => {:price => 3.0, :clearance => false, :count => 1}
 }
 ```
+
 and a coupon for avocados that looks like this:
 
 ```ruby
 {:item => "AVOCADO", :num => 2, :cost => 5.0}
-
 ```
 
 then `apply_coupons` should return the following hash:
@@ -86,13 +88,13 @@ it should return a cart with clearance applied to peanutbutter and soy milk:
 
 Create a `checkout` method that calculates the total cost of the consolidated cart.
 
-When checking out, follow these steps *in order*:
+When checking out, follow these steps _in order_:
 
-* Apply coupon discounts if the proper number of items are present.
+- Apply coupon discounts if the proper number of items are present.
 
-* Apply 20% discount if items are on clearance.
+- Apply 20% discount if items are on clearance.
 
-* If, after applying the coupon discounts and the clearance discounts, the cart's total is over $100, then apply a 10% discount.
+- If, after applying the coupon discounts and the clearance discounts, the cart's total is over $100, then apply a 10% discount.
 
 ### Named Parameters
 
@@ -104,10 +106,10 @@ Named parameters give you more expressive code since you are specifying what eac
 
 ## Resources
 
-* [Named Parameters](https://robots.thoughtbot.com/ruby-2-keyword-arguments)
+- [Named Parameters](https://robots.thoughtbot.com/ruby-2-keyword-arguments)
 
 ## Reward
 
-* [Dr. Brule](http://www.adultswim.com/videos/tim-and-eric-awesome-show-great-job/dr-brule-your-green-grocer/)
+- [Dr. Brule](http://www.adultswim.com/videos/tim-and-eric-awesome-show-great-job/dr-brule-your-green-grocer/)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/green_grocer'>Green Grocer</a> on Learn.co and start learning to code for free.</p>
